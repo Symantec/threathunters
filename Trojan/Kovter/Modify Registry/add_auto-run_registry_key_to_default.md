@@ -1,6 +1,6 @@
 # Kotver
 
-Use this query to look for running Trojan Kotver behavior in the environment
+Use this query to look for running Trojan Kotver behavior in the environment.
 
 ## Query
 ```
