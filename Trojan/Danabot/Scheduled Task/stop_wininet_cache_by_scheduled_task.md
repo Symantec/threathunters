@@ -1,4 +1,4 @@
-# Kotver
+# Danabot
 
 Use this query to look for Trojan Danabot behavior in the environment : removing wininet cache task from task schedular.
 
