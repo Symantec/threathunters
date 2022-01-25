@@ -1,5 +1,5 @@
-#Lokibot
-​
+# Lokibot
+
 Use this query to look for running Lokibot ransomware behavior in the environment
 ​
 ## Query
