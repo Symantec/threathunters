@@ -3,7 +3,7 @@
 Use this query to look for running Emotet behavior in the environment.
 
 ## Query
-
+ 
 ### add registry run entry for malicious file
 
 ~~~
