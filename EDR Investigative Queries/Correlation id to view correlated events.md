@@ -17,3 +17,4 @@ correlation_uid:<Correlation uid>
 ```
 correlation_uid:667F03F9\-2066\-11EC\-B7DA\-001E4FCE8EFD
 ```
+**Note: Key < > Variable to be customized by the user.**
