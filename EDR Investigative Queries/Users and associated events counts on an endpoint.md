@@ -5,8 +5,16 @@
 ```
 Device Name:<Endpoint Name> 
 ```
+#### Example
+```
+Device Name:Endpoint-3
+```
 ### Advanced
 ```
 device_name:<Endpoint Name>
+```
+#### Example
+```
+device_name:Endpoint\-3
 ```
 **Note: Key < > Variable to be customized by the user.**
