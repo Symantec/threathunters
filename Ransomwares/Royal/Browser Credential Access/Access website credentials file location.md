@@ -8,8 +8,8 @@ Use this query to look for running Royal Ransomware behavior in the environment.
 
 ### Query based on events
 
-#### File encryption
+#### Access website credentials file location
 ```
-Event Type Id:8003-File Activity AND Disposition:5 AND Actor Command Line:*-id*
+Event Type Id:8003-File Activity AND Disposition:3 AND Actor Command Line:*-id* AND File Path:*\microsoft\vault\*
 
 ```
