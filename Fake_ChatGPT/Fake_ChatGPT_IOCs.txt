@@ -1,0 +1,77 @@
+SHA256 Hashes:
+f6081359dbe3be1d18364312942e92a17d1bbe670e5ee0e772b6d57ccd48a248
+73d7458f2325b5cf6ddc5bd22fba550654447ca0086c77e72bfebe909ae36541
+bdb2207d7e48950669161e1b349e83bfa0d0e6668d728b68e0da972024892261
+281c8b2c8d76706134b33775f1ff77cca9d6b5f7efb756bd899744210e7b7b97
+e231b9e6662d39c7ddcfa8fdd49ca47f9975b44da0579fe4c628aff7c3b020a7
+9b40ea5b2e8aa6d3d4ea91908fbf722cdd0e8969c1627514d4406cf23904e5b6
+bfa6f2d02351c1a6b09d9f757fd0d3f70d88d6dc0267d6a78b6463ec69840688
+8626855a65c103c5de92ef643efb2f6b53f63bdffa387a5244d8c6ea4d6bf22a
+729594d64f63e4a26428ac2c9f86c3eefe26843b25a0c23ef57b41cbbe2147d8
+0f5fb11add031b4fc449089b0a9314951240e62d499481c0255be8f2e72315e0
+a89a5ae259ef6b567bab683d2132bac220c81c7f575ad983241ba3bdbe99c47a
+9e993219535918559b57adc8175d6b5346c418d0560554d468bf351b7fd51cb9
+474830329a33609a6770a31fedbc6ff354013fc2f373bdd0f0659a58c5b9dbeb
+abb383f9ffbc68abd4078162692da0623c07c22301f13e857e3569efc640b1c0
+f07866f4d4a7cbb269ba4135e865b2c8902dbad462f4206058c248c5b149f5a9
+ba2402f8f3904498fda613b6be260a67edccaaa99cead976f6853ea0e85522f1
+9f21cb38c06536e8f3b9e3350e62c58e6dd2ab771d99085c3a84c5e2dcef8c7e
+6193636098106bb548e8fa0bbef75166ae9b8337de43abd09f5383e07e62ee94
+27d6ceaf9f872f2bbf1c948295d5bfb9cc699bca7072821fcf015ef743ea5ba5
+a3252c1d0868f40ad61cef757ae2e608e410e47b53667ad14323c76fcaf02024
+7513143493551185ff77b53cc17eb285e68f5bda0b1a5461699bd754225b8a88
+053877cae27e1b2cb0aac24b5a562736be62d2756dc9897eca8e72e39ff385f9
+21a38cdad9b81705de356928e0f2abbeb18b2f5c421be52b21cf230049dfb06f
+5b0a6ebbee57c8e57e2ffffd6b2c4c1b686900dcc1c949b1b5ce25803a5042c7
+cbb12939b4d23ea126d9b49de216f1187128049787717d7fd4e0aeb55e42a68e
+ab68a3d42cb0f6f93f14e2551cac7fb1451a49bc876d3c1204ad53357ebf745f
+25c3658f98b85a14e11d67e2bd2a9f03d387bdf6f1269d4aed4c2248e96ec1ae
+
+Filenames:
+gpt-chat-setup_x64.exe
+chatgpt.exe
+chat gpt.exe
+chat- gpt.exe
+chat gpt setup.exe
+chatgpt-openai-.full-destop-63f6f5c3ae530d5930f758b2.exe
+chatgpt-openai-full-destop-63f6f5c3ae530d5930f758b2.exe
+CapCutPro-..Full...-15.6.14576483US-ggde3468W45sdrc-setup.exe
+ms excel.exe
+gpt-chat-setup_x64.rar
+chatgpt.rar
+chat_gpt.rar
+thangvan1.rar
+chat-_gpt.rar
+ChatGPT-OpenAI-Full-Destop-63f6f5c3ae530d5930f758b2.rar
+ChatGPT-OpenAI-.Full-Destop-63f6f5c3ae530d5930f758b2.rar
+CapCutPro-..Full...-15.6.14576483US-ggde3468W45sdrc-setup.rar
+
+Download URLs:
+hxxps://trello[.]com/1/cards/63f627c7b402072f90bc3c0c/attachments/63f8a6484757b0b36adeb9b9/download/gpt-chat-setup_x64.rar
+hxxps://trello[.]com/1/cards/63f8d2330628ad46a46673a2/attachments/63f8d23fdf3101b030f245ac/download/CHATGPT.rar
+hxxps://trello[.]com/1/cards/63fc62757ac9bff4a94dfbbe/attachments/63fc628ef901614016557b14/download/CHATGPT.rar
+hxxps://trello[.]com/1/cards/63f5be71ba654d0f9ed33c4a/attachments/63f5d710475942da4dc04ff7/download/CHATGPT.rar
+hxxps://trello[.]com/1/cards/63f5be71ba654d0f9ed33c4a/attachments/63f79cd820a950423c5f671d/download/CHATGPT.rar
+hxxps://trello[.]com/1/cards/63ff36d26342150a10558be4/attachments/63ff36dba4b543297f0baf0a/download/Chat_GPT.rar
+hxxps://trello[.]com/1/cards/63fb4a789b7d3643a88310bf/attachments/63fb4a80afd3baeaf63fbb84/download/Chat_GPT.rar
+hxxps://trello[.]com/1/cards/63fa2187bb80538afe1b45b4/attachments/63fa21929dfa47cf3e0674e5/download/Chat_GPT.rar
+hxxps://trello[.]com/1/cards/63f6f6d1d5ed61475afe5528/attachments/63f74629e8880aa203022490/download/ChatGPT-OpenAI-.Full-Destop-63f6f5c3ae530d5930f758b2.rar
+
+Persistence:
+"CSIDL_PROFILE\appdata\roaming\microsoft\windows\start menu\programs\startup\ms excel.exe"
+
+Connections:
+api.telegram[.]org
+lumtest[.]com
+mercvip[.]com
+Typo-Squatter URLs:
+free-gptchat[.]com
+capcut-editor-video[.]com
+cap-cut-editor-video[.]com
+chat-gpt-free[.]com
+website-office-video[.]com
+traicaysach3mien[.]com
+capcut-editor-video-free[.]com
+gpt-chat-free[.]com
+filmora-wonder[.]com
+click-minded[.]com
