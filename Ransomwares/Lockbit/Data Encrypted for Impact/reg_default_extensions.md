@@ -2,6 +2,8 @@
 
 Use this query to look for ransomware Lockbit behavior in the environment.
 
+## EDR CDM [Cloud Console queries]
+
 ## Query
 
 Lockbit creates its extension registry key
