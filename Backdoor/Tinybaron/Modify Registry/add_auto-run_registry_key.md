@@ -2,8 +2,10 @@
 
 Use this query to look for running Backdoor Tinybaron behavior in the environment
 
+## EDR CDM [Cloud Console queries]
+
 ## Query
 ```
-type_id:8006 and operation:2 and reg_value.path:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run and reg_value.name:recovery and reg_value_result.data:SYSTEM
+Event Type Id:8006-Registry Value Activity AND Disposition:2 AND Registry Value Path:HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\ AND Registry Value Name:recovery
 
 ```
