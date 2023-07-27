@@ -1,6 +1,6 @@
 # GuLoader
 
-Use this query to look for Guloader Fileless activity in the environment.
+Use this query to look for Guloader behavior in the environment.
 
 ## EDR CDM [Cloud Console queries]
 
