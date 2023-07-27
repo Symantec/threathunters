@@ -1,4 +1,4 @@
-#GuLoader
+# GuLoader
 
 Use this query to look for Guloader Fileless activity in the environment.
 
