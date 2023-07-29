@@ -1,11 +1,7 @@
 # File creations in non C:\ directory
 
-## Query Syntax 
-### Easy 
+## EDR CDM [Cloud Console queries]
+
 ```
-Event Type Id:8003\-File Activity AND Disposition:1 AND NOT File Path:C\:*
-```
-### Advanced
-```
-type_id:8003 AND id:1 AND -file.path:C\:*
+Event Type Id:8003-File Activity AND Disposition:1 AND NOT File Path Token:c:\ AND Device OS Type:100-Windows
 ```
