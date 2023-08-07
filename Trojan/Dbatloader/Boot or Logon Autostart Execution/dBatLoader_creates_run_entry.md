@@ -1,4 +1,4 @@
-# DatLoader
+# DBatLoader
 
 Use this query to look for Trojan DBatLoader behavior in the environment.
 
