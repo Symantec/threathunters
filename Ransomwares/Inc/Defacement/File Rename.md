@@ -10,6 +10,6 @@ Use this query to look for running Inc Ransomware behavior in the environment.
 
 #### File Rename
 ```
-Event Type Id:8003-File Activity AND Disposition:4 AND File Result Name:*.inc
+Event Type Id:8003-File Activity AND Disposition:4 AND File Folder Token:Programdata AND File Result Name:*\.inc
 
 ```
