@@ -2,10 +2,10 @@
 
 Use this query to look for ransomware Conti behavior in the environment.
 
-## Query
+## EDR CDM [Cloud Console queries]
 
 Search for Anydesk silent mode installation with automatic startup action.
 
 ```
-type_id:8001 AND operation:1 AND process.file.name:anydesk.exe AND process.cmd_line:"--install c:\programdata\anydesk --start-with-win --silent"
+Event Type Id:8001-Process Activity AND Disposition:1 AND Process Name:anydesk.exe AND ( Process Command Line Token: install AND Process Command Line Token:anydesk AND Process Command Line Token:start with win silent )
 ```

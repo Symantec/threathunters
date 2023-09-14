@@ -2,10 +2,10 @@
 
 Use this query to look for ransomware Conti behavior in the environment.
 
-## Query
+## EDR CDM [Cloud Console queries]
 
 Search for ngrok exposing an RDP server listening on the default port.
 
 ```
-type_id:8001 AND operation:1 AND process.file.name:ngrok.exe AND process.cmd_line:"tcp 3389"
+Event Type Id:8001-Process Activity AND Disposition:1 AND Process Name:ngrok.exe AND Process Command Line Token: tcp 3389
 ```
