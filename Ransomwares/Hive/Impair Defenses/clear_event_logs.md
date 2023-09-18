@@ -2,10 +2,10 @@
 
 Use this query to look for ransomware Hive behavior in the environment.
 
-## Query
+## EDR CDM [Cloud Console queries]
 
 Search for event logs clearing events.
 
 ```
-type_id:8001 AND operation:1 AND process.file.name:wevtutil.exe AND process.cmd_line:"wevtutil.exe cl" AND process.cmd_line:["application" OR "system" OR "security"]
+Event Type Id:8001-Process Activity AND Disposition:1 AND Process Name:wevtutil.exe AND Process Command Line Token:wevtutil.exe cl AND ( Process Command Line Token:application OR Process Command Line Token:system OR Process Command Line Token:security )
 ```

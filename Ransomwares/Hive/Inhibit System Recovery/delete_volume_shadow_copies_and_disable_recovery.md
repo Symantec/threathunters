@@ -7,16 +7,16 @@ Use this query to look for running Hive ransomware deleting backup in the enviro
 Search for volume shadow copies deleting events.
 
 ```
-type_id:8001 AND operation:1 AND process.file.name:vssadmin.exe AND process.cmd_line:"delete shadows"
+Event Type Id:8001-Process Activity AND Disposition:1 AND Process Name:vssadmin.exe AND Process Command Line Token:delete shadows
 ```
 
 ```
-type_id:8001 AND operation:1 AND process.file.name:wmic.exe AND process.cmd_line:"shadowcopy delete"
+Event Type Id:8001-Process Activity AND Disposition:1 AND Process Name:wmic.exe AND Process Command Line Token:shadowcopy delete
 ```
 
 Search for Windows recovery disabling events.
 
 ```
-type_id:8001 AND operation:1 AND process.cmd_line:"bcdedit.exe /set {default}" AND process.cmd_line:["bootstatuspolicy ignoreallfailures" OR "recoveryenabled no"]
+Event Type Id:8001-Process Activity AND Disposition:1 AND ( Process Name:cmd.exe OR Process Name:powershell.exe) AND ( Process Command Line Token:bcdedit.exe set default ) AND ( Process Command Line Token:bootstatuspolicy ignoreallfailures OR Process Command Line Token:recoveryenabled no )
 ```
 

@@ -2,7 +2,9 @@
 
 Use this query to look for running Hive ransomware's launching hive.bat behavior in the environment
 
-## Query
+## EDR CDM [Cloud Console queries]
+
+Launches shell silently
 ```
-type_id:8001 and operation:1 and process.file.name:cmd.exe and process.cmd_line:"*/c hive.bat >NUL 2>NUL"
+Event Type Id:8001-Process Activity AND Disposition:1 AND Process Name:cmd.exe AND Process Command Line Token:c hive.bat NUL 2 NUL
 ```
