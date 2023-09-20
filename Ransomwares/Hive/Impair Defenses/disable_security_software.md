@@ -11,42 +11,41 @@ Event Type Id:8001-Process Activity AND Disposition:1 AND Process Name:reg.exe A
 ```
 
 ```
-type_id:8001 AND operation:1 AND process.file.name:powershell.exe AND process.file.name:powershell.exe AND process.cmd_line:["set-mppreference -disablerealtimemonitoring $true" OR "set-mppreference -disableioavprotection $true"]
+Event Type Id:8001-Process Activity AND Disposition:1 AND Process Name:powershell.exe AND ( Process Command Line Token:set mppreference disablerealtimemonitoring true OR Process Command Line Token:set mppreference disableioavprotection true )
 ```
 
 Search for Windows Defender's services disabling events.
 
 ```
-type_id:8001 AND operation:1 AND process.file.name:reg.exe AND process.cmd_line:"reg.exe add \"hklm\\system\\currentcontrolset\\services\\" AND process.cmd_line:[wdboot OR wdfilter OR wdnisdrv OR wdnissvc OR windefend] AND process.cmd_line:"\" /v \"start\" /t reg_dword /d \"4\""
+Event Type Id:8001-Process Activity AND Disposition:1 AND Process Name:reg.exe AND ( Process Command Line Token:reg.exe add OR Process Command Line Token:reg add ) AND Process Command Line Token:system currentcontrolset services AND ( Process Command Line Token:wdboot OR Process Command Line Token:wdfilter OR Process Command Line Token:wdnisdrv OR Process Command Line Token:wdnissvc OR Process Command Line Token:windefend ) AND Process Command Line Token: v start t reg_dword d 4
 ```
 
 Search for Windows Defender's logging disabling events.
 
 ```
-type_id:8001 AND operation:1 AND process.file.name:reg.exe AND process.cmd_line:"reg.exe add \"hklm\\system\\currentcontrolset\\control\\wmi\\autologger\\" AND process.cmd_line:["defenderapilogger\" /v \"start\" /t reg_dword /d \"0\"" OR "defenderauditlogger\" /v \"start\" /t reg_dword /d \"0\""]
+Event Type Id:8001-Process Activity AND Disposition:1 AND Process Name:reg.exe AND ( Process Command Line Token:reg.exe add OR Process Command Line Token:reg add ) AND Process Command Line Token:system currentcontrolset control wmi autologger AND ( Process Command Line Token:defenderapilogger v start t reg_dword d 0 OR Process Command Line Token:defenderauditlogger v start t reg_dword d 0 )
 ```
 
 Search for Windows Defender's scheduled tasks disabling events.
 
 ```
-type_id:8001 AND operation:1 AND process.file.name:schtasks.exe AND process.cmd_line:"schtasks.exe /change /tn \"microsoft\\windows\\" AND process.cmd_line:[exploitguard mdm policy refresh\" /disable OR "windows defender cache maintenance\" /disable" OR "windows defender cleanup\" /disable" OR "windows defender scheduled scan\" /disable" OR "windows defender verification\" /disable"]
+Event Type Id:8001-Process Activity AND Disposition:1 AND Process Name:schtasks.exe AND Process Command Line Token:change tn microsoft windows AND ( Process Command Line Token:exploitguard mdm policy refresh disable OR Process Command Line Token:windows defender cache maintenance disable OR Process Command Line Token:windows defender cleanup disable OR Process Command Line Token:windows defender scheduled scan disable OR Process Command Line Token:windows defender verification disable )
 ```
 
 Search for Windows Defender's autostart entries deleting events.
 
 ```
-type_id:8001 AND operation:1 AND process.file.name:reg.exe AND process.cmd_line:"reg.exe delete" AND process.cmd_line:"\\software\\microsoft\\windows\\currentversion" AND process.cmd_line:["\\run\" /v \"windowsdefender" OR "\\run\" /v \"windows defender"]
+Event Type Id:8001-Process Activity AND Disposition:1 AND Process Name:reg.exe AND ( Process Command Line Token:reg.exe delete OR Process Command Line Token:reg delete ) AND Process Command Line Token:software microsoft windows currentversion AND ( Process Command Line Token:run v windowsdefender OR Process Command Line Token:run v windows defender )
 ```
 
 Search for Windows Defender's context menu entries deleting events.
 
 ```
-type_id:8001 AND operation:1 AND process.file.name:reg.exe AND process.cmd_line:"reg.exe delete" AND process.cmd_line:"\\shellex\\contextmenuhandlers\\epp\""
+Event Type Id:8001-Process Activity AND Disposition:1 AND Process Name:reg.exe AND ( Process Command Line Token:reg.exe delete OR Process Command Line Token:reg delete ) AND Process Command Line Token:shellex contextmenuhandlers epp
 ```
 
 Search for Windows Defender's registry entry deleting event.
 
 ```
-type_id:8001 AND operation:1 AND process.file.name:reg.exe AND process.cmd_line:"reg.exe delete \"hklm\\software\\policies\\microsoft\\windows defender\""
+Event Type Id:8001-Process Activity AND Disposition:1 AND Process Name:reg.exe AND ( Process Command Line Token:reg.exe delete OR Process Command Line Token:reg delete ) AND Process Command Line Token:software policies microsoft windows defender
 ```
-
