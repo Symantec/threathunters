@@ -5,5 +5,5 @@ Use this query to look for running Crysis ransomware behavior in the environment
 ## EDR CDM [Cloud Console queries]
 
 ```
-Event Type Id:8001-Process Activity AND Disposition:1 AND Process Command Line Token:mode con
+Device OS Type:100-Windows AND Event Type Id:8001-Process Activity AND Disposition:1 AND Process Command Line Token:mode con
 ```

@@ -7,5 +7,5 @@ Use this query to look for running Devos Ransomware behavior in the environment.
 #### Devos Ransom Note on Desktop
 
 ```
-Event Type Id:8003-File Activity AND Disposition:1 AND File Name:info.hta AND File Folder Token:desktop
+Device OS Type:100-Windows AND Event Type Id:8003-File Activity AND Disposition:1 AND File Name:info.hta AND File Folder Token:desktop
 ```
