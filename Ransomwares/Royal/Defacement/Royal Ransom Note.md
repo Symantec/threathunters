@@ -2,11 +2,7 @@
 
 Use this query to look for running Royal Ransomware behavior in the environment.
 
-### Details
-
 ## EDR CDM [Cloud Console queries]
-
-### Query based on events
 
 #### Royal Ransom Note
 ```

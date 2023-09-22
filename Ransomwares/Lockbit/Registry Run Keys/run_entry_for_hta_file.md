@@ -2,10 +2,10 @@
 
 Use this query to look for ransomware Lockbit behavior in the environment.
 
-## Query
+## EDR CDM [Cloud Console queries]
 
-Search for ransomware note as HTML application(.hta) in registry run entry.
+### Search for ransomware note as HTML application(.hta) in registry run entry.
 
 ```
-type_id:8006 and operation:2 and reg_value.path:Software\Microsoft\Windows\CurrentVersion\Run\ and reg_value_result.data:/.*.hta/
+Event Type Id:8006-Registry Value Activity AND Disposition:2 AND Registry Value Path Token:Software Microsoft Windows CurrentVersion Run AND Registry Value Result Data Token:hta
 ```

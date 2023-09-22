@@ -2,25 +2,25 @@
 
 Use this query to look for running Lokibot ransomware behavior in the environment
 ​
-## Query
+## EDR CDM [Cloud Console queries]
 ​
 create *.lck file under appdata folder
 
 ```
-type_id:8003 and operation:1 and file.path:/.*appdata/ and file.path:/.*.lck/
+Event Type Id:8003-File Activity AND Disposition:1 AND File Path Token:appdata AND File Name Token:lck
 
 ```
 ​
 move malware file itself from current path to appdata path
 ​
 ```
-type_id:8003 and operation:4 and file.path:/.*appdata/ and file.path:/.*.exe/
+Event Type Id:8003-File Activity AND Disposition:4 AND File Path Token:appdata AND File Name Token:exe
 
 ```
 ​
 set hidden attributes for appdata file
 ​
 ```
-type_id:8003 and operation:6 and file.path:/.*appdata/ and file.path:/.*.exe/
+Event Type Id:8003-File Activity AND Disposition:6 AND File Path Token:appdata AND File Name Token:exe
 
 ```

@@ -4,11 +4,8 @@ Use this query to look for ransomware Lockbit behavior in the environment.
 
 ## EDR CDM [Cloud Console queries]
 
-## Query
-
-Lockbit launches cmd.exe to delete shadow copies using wmic, vssadmin and bcdedit
+### Lockbit launches cmd.exe to delete shadow copies using wmic, vssadmin and bcdedit
 
 ```
-Process Name:cmd.exe AND ( Process Command Line:/.*vssadmin.*/ AND Process Command Line:/.*bcdedit.*/ AND Process Command Line:/.*wmic.*/)
-
+Device OS Type:100-Windows AND Event Type Id:8001-Process Activity AND Disposition:1 AND Process Name:cmd.exe AND ( Process Command Line Token:vssadmin AND Process Command Line Token:bcdedit AND Process Command Line Token:wmic )
 ```

@@ -2,10 +2,10 @@
 
 Use this query to look for running Karma ransomware behavior in the environment
 
-## Query
+## EDR CDM [Cloud Console queries]
 
 Files renamed with karma extention after encrypted.
  
 ```
-type_d:8003 and operation:4 and (file.path:*.karma_v2 or file.path:*.karma)
+Event Type Id:8003-File Activity AND Disposition:4 AND File Name Token:karma
 ```
