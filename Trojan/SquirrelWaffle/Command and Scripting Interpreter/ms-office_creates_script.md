@@ -7,6 +7,6 @@ Use this query to look for running Trojan SquirrelWaffle behavior in the environ
 ### MS-Office application creates vbs file
 
 ```
-type_id:8003 and operation:1 and ( event_actor.file.name:winword.exe or event_actor.file.name:excel.exe or event_actor.file.name:powerpnt.exe) and file.name:pin.vbs
+Device OS Type:100-Windows AND Event Type Id:8003-File Activity AND Disposition:1 AND ( Actor File Name:winword.exe OR Actor File Name:excel.exe OR Actor File Name:powerpnt.exe ) AND File Name:pin.vbs
 
 ```

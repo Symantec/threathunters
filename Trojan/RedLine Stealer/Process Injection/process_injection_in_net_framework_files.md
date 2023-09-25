@@ -6,6 +6,7 @@ Use this query to look for running RedLine Stealer behavior in the environment.
 
 ### Using Powershell command doing process injection in .NET framework PE file
 
-~~~
-type_id:8001 and operation:1 and event_actor.file.name:powershell.exe and (process.file.name:regsvcs.exe or process.file.name:installutil.exe) and event_actor.cmd_line:"powershell.exe -exec bypass -enc" and process.file.normalized_path:"csidl_windows\microsoft.net\framework"
-~~~
+'''
+Device OS Type:100-Windows AND Event Type Id:8001-Process Activity AND Disposition:1 AND Actor File Name:powershell.exe AND ( Process Name:regsvcs.exe OR Process Name:installutil.exe ) AND Process Normalized Path Token:csidl_windows microsoft.net framework AND Actor Command Line Token:powershell.exe exec bypass enc
+
+'''

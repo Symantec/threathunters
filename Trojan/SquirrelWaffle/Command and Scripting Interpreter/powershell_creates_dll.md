@@ -7,5 +7,6 @@ Use this query to look for running Trojan SquirrelWaffle behavior in the environ
 ### PowerShell creates dll files
 
 ```
-type_id:8003 and operation:1 and event_actor.file.name:powershell.exe and ( file.name:www1.dll or file.name:www2.dll or file.name:www3.dll or file.name:www4.dll or file.name:www5.dll )
+Device OS Type:100-Windows AND Event Type Id:8003-File Activity AND Disposition:1 AND Actor File Name:powershell.exe AND ( File Name:www1.dll OR File Name:www2.dll OR File Name:www3.dll OR File Name:www4.dll OR File Name:www5.dll )
+
 ```

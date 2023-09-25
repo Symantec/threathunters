@@ -6,6 +6,7 @@ Use this query to look for running RedLine Stealer behavior in the environment.
 
 ### Mshta doing suspicious remote IP connection
 
-~~~
-type_id:8007 and operation:3 and event_actor.file.name:mshta.exe and (data_source_url_domain:"179.43.175.187" or data_source_url_domain:"179.43.175.179" or data_source_url_domain:"179.43.175.171")
-~~~
+'''
+Device OS Type:100-Windows AND Event Type Id:8007-Host Network Activity AND Disposition:3 AND Actor File Name:mshta.exe AND ( Destination IP:179.43.175.187 OR Destination IP:179.43.175.179 OR Destination IP:179.43.175.171 )
+
+'''

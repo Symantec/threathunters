@@ -7,6 +7,6 @@ Use this query to look for running Trojan SquirrelWaffle behavior in the environ
 ### cscript launches PowerShell to download payload
 
 ```
-type_id:8001 and operation:1 and event_actor.file.name:cscript.exe and process.file.name:powershell.exe and process.cmd_line:/pt.html/
+Device OS Type:100-Windows AND Event Type Id:8001-Process Activity AND Disposition:1 AND Actor File Name:cscript.exe AND Process Name:powershell.exe AND Process Command Line Token:pt.html
 
 ```
