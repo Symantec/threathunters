@@ -2,7 +2,7 @@
 
 Use this query to look for running Trojan SquirrelWaffle behavior in the environment.
 
-## Query
+## EDR CDM [Cloud Console queries]
 
 ### cscript launches payload from CSIDL_COMMON_APPDATA using rundll32.exe
 

@@ -7,7 +7,6 @@ Use this query to look for Dridex persistence behavior.
 ### Scheduled task creation containing system directory
 
 ```
-type_id:8001 and event_actor.file.name:cmd.exe and process.file.name:schtasks.exe and (process.cmd_line:"*schtasks.exe /Create /F /TN*" and (process.cmd_line:"*/TR C:\Windows\System32\*" or process.cmd_line:"*/TR C:\Windows\SysWOW64\*" or 
-process.cmd_line:"*/TR CSIDL_SYSTEM\*" or process.cmd_line:"*/TR CSIDL_SYSTEMX86\*")) and (-process.file.normalized_path:CSIDL_SYSTEM\* and -process.file.normalized_path:CSIDL_SYSTEMX86\*)
+Device OS Type:100-Windows AND Event Type Id:8001-Process Activity AND Disposition:1 AND Actor File Name:cmd.exe AND Process Name:schtasks.exe AND Process Command Line Token:schtasks.exe Create F TN AND ( Process Command Line Token:TR C Windows System32 OR Process Command Line Token:TR C Windows SysWOW64 OR Process Command Line Token:TR CSIDL_SYSTEM OR Process Command Line Token:TR CSIDL_SYSTEMX86 ) AND NOT Process Normalized Path Token:CSIDL_SYSTEM AND NOT Process Normalized Path Token:CSIDL_SYSTEMX86
 
 ```

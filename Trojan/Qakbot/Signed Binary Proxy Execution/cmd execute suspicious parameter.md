@@ -10,6 +10,6 @@ Use this query to look for running Trojan Qakbot behavior in the environment.
 
 #### wscript launched cmd with suspicious parameter
 ```
-Event Type Id:8001-Process Activity AND Actor File Name:wscript.exe AND Process Name:cmd.exe  AND Actor Command Line:*.js* AND Process Command Line:*r32\"*
+Device OS Type:100-Windows AND Event Type Id:8001-Process Activity AND Disposition:1 AND Actor File Name:wscript.exe AND Process Name:cmd.exe AND Process Command Line Token:r32 AND Actor Command Line:/.*js.*/
 
 ```

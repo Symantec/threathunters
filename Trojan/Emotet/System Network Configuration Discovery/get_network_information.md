@@ -2,10 +2,11 @@
 
 Use this query to look for running Emotet behavior in the environment.
 
-## Query
+## EDR CDM [Cloud Console queries]
 
 ### Rundll32 launch systeminfo.exe
 
-~~~
-type_id:8001 and operation:1 and process.file.name:systeminfo.exe and event_actor.file.name:rundll32.exe and event_actor.cmd_line:/.*appdata/ and event_actor.cmd_line:*,DllRegisterServer
-~~~
+```
+Device OS Type:100-Windows AND Event Type Id:8001-Process Activity AND Disposition:1 AND Actor File Name:rundll32.exe AND Actor Command Line Token:appdata AND Actor Command Line Token:DllRegisterServer AND Process Name:systeminfo.exe
+
+```

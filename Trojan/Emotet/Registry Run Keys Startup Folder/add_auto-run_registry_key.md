@@ -2,10 +2,11 @@
 
 Use this query to look for running Emotet behavior in the environment.
 
-## Query
+## EDR CDM [Cloud Console queries]
  
 ### add registry run entry for malicious file
 
-~~~
-type_id:8006 and operation:2 and event_actor.cmd_line:*,DllRegisterServer and reg_value.path:Software\Microsoft\Windows\CurrentVersion\Run\ and reg_value_result.data:*rundll32.exe and reg_value_result.data:AppData\Local\
-~~~
+```
+Event Type Id:8006-Registry Value Activity AND Disposition:2 AND Actor Command Line Token:DllRegisterServer AND Registry Value Path Token:SOFTWARE Microsoft Windows CurrentVersion Run AND Registry Value Result Data Token:rundll32.exe AND Registry Value Result Data Token:AppData Local
+
+```

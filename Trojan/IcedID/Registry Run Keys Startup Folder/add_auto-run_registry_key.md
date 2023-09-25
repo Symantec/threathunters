@@ -2,10 +2,11 @@
 
 Use this query to look for running IcedID behavior in the environment.
 
-## Query
+## EDR CDM [Cloud Console queries]
 
 ### add registry run entry for malicious file
 
-~~~
-type_id:8006 and operation:2 and reg_value.path:Software\Microsoft\Windows\CurrentVersion\Run\ and reg_value_result.data:appdata\Roaming\images.exe
-~~~
+```
+Event Type Id:8006-Registry Value Activity AND Disposition:2 AND Registry Value Path Token:SOFTWARE Microsoft Windows CurrentVersion Run AND Registry Value Result Data Token:appdata Roaming images.exe
+
+```

@@ -2,7 +2,7 @@
 
 Use this query to look for running RedLine Stealer behavior in the environment.
 
-## Query
+## EDR CDM [Cloud Console queries]
 
 ### Using Powershell command doing process injection in .NET framework PE file
 

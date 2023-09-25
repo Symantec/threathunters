@@ -2,8 +2,7 @@
 
 Use this query to look for Trojan Danabot behavior in the environment : NSIS packed danabot executable drops and execute themida packed component in %Temp%.
 
-## Query
+### Query based on events 
 ```
-( type_id:8003 and operation:1 and file.normalized_path: CSIDL_PROFILE\appdata\local\temp\effort\giliak.exe ) or ( type_id:8001 and operation:1 and process.file.normalized_path:CSIDL_PROFILE\appdata\local\temp\effort\giliak.exe )
-
+Device OS Type:100-Windows AND ( ( Event Type Id:8003-File Activity AND Disposition:1 AND File Normalized Path:CSIDL_PROFILE\\appdata\\local\\temp\\effort\\giliak.exe ) OR ( Event Type Id:8001-Process Activity AND Disposition:1 AND Process Normalized Path:CSIDL_PROFILE\\appdata\\local\\temp\\effort\\giliak.exe ))
 ```

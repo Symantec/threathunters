@@ -12,22 +12,20 @@ Use this query to look for Trojan BumbleBee in the environment.
 #### Launch of lnk through cmd
 
 ```
-Event Type Id:8001-Process Activity AND Disposition:1 AND Process Name:cmd.exe AND Actor Command Line:/.*cmd.exe..\/c start \/wait .*.lnk.*/
+Device OS Type:100-Windows AND Event Type Id:8001-Process Activity AND Disposition:1 AND Process Name:cmd.exe AND Actor Command Line:/.*cmd.exe \/c start \/wait .*.lnk.*/
 
 ```
 
 ### Query on behavior-based protection
 
 ```
-quick:"SONAR Detection" and (bash.virus_name:SONAR.SuspOpen!gen7 or bash.virus_name:SONAR.SuspOpen!gen8 or bash.virus_name:SONAR.SuspStart!gen12)
-
+Event Type Id:8027-Process Detection AND ( Threat Name:SONAR.SuspOpen!gen7 OR Threat Name:SONAR.SuspOpen!gen8 OR Threat Name:SONAR.SuspStart!gen12 )
 ```
 
 ### Query on network-based protection
 
 ```
-quick:"Vantage Detection" and (signature_id:11662 or signature_id:11668 or signature_id:28589 or signature_id:30493 or signature_id:31849 or signature_id:32610)
-
+Event Type Id:8040-Host Network Detection AND ( Threat Id:11662 OR Threat Id:11668 OR Threat Id:28589 OR Threat Id:30493 OR Threat Id:31849 OR Threat Id:32610 )
 ```
 
 ## Note

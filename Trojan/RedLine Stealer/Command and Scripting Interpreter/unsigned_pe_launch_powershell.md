@@ -2,10 +2,11 @@
 
 Use this query to look for running RedLine Stealer behavior in the environment.
 
-## Query
+## EDR CDM [Cloud Console queries]
 
 ### Unsigned PE launch Powershell
 
-~~~
-type_id:8001 and operation:1 and event_actor.signature_level_id:0 and process.file.name:powershell.exe and process.cmd_line:"Add-MpPreference -ExclusionPath" and process.cmd_line:"AppData\Roaming\Windows Folder"
-~~~
+'''
+Device OS Type:100-Windows AND Event Type Id:8001-Process Activity AND Disposition:1 AND Actor File Signature Level Id:0 AND Process Name:powershell.exe AND Process Command Line Token:Add MpPreference ExclusionPath AND Process Command Line Token:AppData Roaming Windows Folder
+
+'''

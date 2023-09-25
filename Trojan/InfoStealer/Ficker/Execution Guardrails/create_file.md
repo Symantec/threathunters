@@ -2,10 +2,11 @@
 
 Use this query to look for running FickerStealer behavior in the environment. 
 
-## Query
+## EDR CDM [Cloud Console queries]
 
-### create file with specific name at programdata
+### Stealing data from programdata
 
 ```
-type_id:8003 and operation:3 and file.path:/.*programdata/ and (file.path:*\kaosdma.txt or file.path:*\kaosdma.png)
+Device OS Type:100-Windows AND Event Type Id:8003-File Activity AND Disposition:3 AND File Path Token:programdata  AND ( File Name:kaosdma.txt OR File Name:kaosdma.png )
+
 ```

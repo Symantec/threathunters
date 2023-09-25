@@ -2,7 +2,7 @@
 
 Use this query to look for running RedLine Stealer behavior in the environment.
 
-## Query
+## EDR CDM [Cloud Console queries]
 
 ### Unsinged process inject code into .net framework file applaunch.exe 
 

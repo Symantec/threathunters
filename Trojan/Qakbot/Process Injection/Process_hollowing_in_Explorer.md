@@ -2,11 +2,11 @@
 
 Use this query to look for running Trojan Qakbot behavior in the environment.
 
-## Query
+## EDR CDM [Cloud Console queries]
 
 ### Process hollowing in explorer.exe
 
 ```
-type_id:8001 and operation:1 and (event_actor.file.name:rundll32.exe or event_actor.file.name:regsvr32.exe) and process.file.name:explorer.exe and process.file.normalized_path:CSIDL_SYSTEMX86\explorer.exe
+Device OS Type:100-Windows AND Event Type Id:8001-Process Activity AND Disposition:1 AND ( Actor File Name:rundll32.exe OR Actor File Name:regsvr32.exe ) AND Process Name:explorer.exe AND Process Normalized Path:CSIDL_SYSTEMX86\\explorer.exe
 
 ```

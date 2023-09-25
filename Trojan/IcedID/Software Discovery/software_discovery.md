@@ -2,10 +2,11 @@
 
 Use this query to look for running IcedID behavior in the environment.
 
-## Query
+## EDR CDM [Cloud Console queries]
 
 ### Doing software discovery
 
-~~~
-type_id:8015 and severity_id:1 and event_actor.file.path:appdata\roaming\images.exe
-~~~
+```
+Event Type Id:8015-Monitored Source AND Severity:1-Informational AND Actor File Path Token:appdata roaming images.exe
+
+```
