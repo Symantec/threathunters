@@ -8,7 +8,7 @@ Use this query to look for running BlackBasta Ransomware behavior in the environ
 
 ### Query based on events
 
-#### File encryption
+#### File encryption by modifying legit filetypes
 ```
 Event Type Id:8003-File Activity AND Disposition:5 AND Actor File Name:rundll32.exe AND Actor Command Line Token:VisibleEntry AND File Name:(*.exe OR *dll OR *.doc* OR *.png OR *.jpg OR *.log OR *.ini OR *.ppt* OR *.txt OR *.xls* OR *.lnk OR *.bmp OR *.gif OR *.pdf OR *.zip)
 
