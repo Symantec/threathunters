@@ -2,11 +2,7 @@
 
 Use this query to look for ransomware Babuk behavior in the environment.
 
-### Details
-
 ## EDR CDM [Cloud Console queries]
-
-### Query based on events
 
 ### Files encrypted with Babuk extension.
 
