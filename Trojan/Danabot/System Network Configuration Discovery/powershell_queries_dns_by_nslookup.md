@@ -4,6 +4,9 @@ Use this query to look for Trojan Danabot behavior in the environment : powershe
 
 ## EDR CDM [Cloud Console queries]
 
+### Search for powershell launching nslookup for localhost.
+
+### 
 ```
 Device OS Type:100-Windows AND Event Type Id:8001-Process Activity AND Disposition:1 AND Actor File Name:powershell.exe AND Process Name:nslookup.exe AND Process Command Line Token:C WINDOWS system32 nslookup.exe type any localhost
 
