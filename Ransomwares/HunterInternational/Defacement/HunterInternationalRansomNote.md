@@ -8,6 +8,6 @@ Use this query to look for running Hunter International Ransomware behavior in t
 
 #### Search for Hunter International Ransom Note.
 ```
-Event Type Id:8003-File Activity AND Disposition:1 AND File Normalized Path:CSIDL_PROFILE\\desktop\\contact us.txt
+Device OS Type:100-Windows AND Event Type Id:8003-File Activity AND Disposition:1 AND File Path Token:desktop AND File Normalized Path:CSIDL_PROFILE\\desktop\\contact us.txt
 
 ```
