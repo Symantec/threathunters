@@ -2,7 +2,7 @@
 
 Use this query to look for ImPacket behavior in the environment.
 
-## EDR CDM [Full Dump] queries 
+## EDR CDM [Cloud Console queries] 
 
 ### Search for wmiexec module launching executable from remote machine
 
