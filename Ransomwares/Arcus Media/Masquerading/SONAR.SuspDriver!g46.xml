@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+
+<PECreateEvent>
+    <Actor>
+        <is_highly_trusted>False</is_highly_trusted>
+    </Actor>
+    <Target>
+        <executable_type>3</executable_type>
+        <extension></extension>
+    </Target>
+</PECreateEvent>
+
